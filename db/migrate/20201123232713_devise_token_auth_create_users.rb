@@ -33,11 +33,11 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.string :last_name #incluso campo last_name
       t.string :email
       t.string :role #incluso campo regra para utilização no puntid
-      t.integer  :sign_in_count, default: 0, null: false
-      t.datetime :current_sign_in_at
-      t.datetime :last_sign_in_at
-      t.inet     :current_sign_in_ip
-      t.inet     :last_sign_in_ip
+      t.integer  :sign_in_count, default: 0, null: false #contador de quantidade de logins efetuados
+      t.datetime :current_sign_in_at #data atual de login
+      t.datetime :last_sign_in_at #ultimo login efetuado
+      t.inet     :current_sign_in_ip #IP atual de login
+      t.inet     :last_sign_in_ip #ultimo IP logado
       
 
       ## Tokens
