@@ -1,4 +1,5 @@
 require "rails_helper"
+
 RSpec.describe "Cadastro", :type => :request do
     before(:each) do
         @sign_up_url = '/api/v1/auth/' 
@@ -25,7 +26,7 @@ RSpec.describe "Cadastro", :type => :request do
             end
             
             it 'retorna o usuário no cabeçalho de autenticação' do
-            expect(response.headers['user']).to be_present
+            expect(response.headers['client']).to be_present
             end
             
             it 'retorna expiração no cabeçalho de autenticação' do
