@@ -19,7 +19,7 @@
 
     faker (gem utilizada para gerar dados aleatórios para os testes TDD)
 
-Como Rodar o este projeto
+# Como Rodar o este projeto
 
 1 - Faça o download via comando git clone.
 
@@ -51,4 +51,23 @@ Use Ctrl-C to stop
 
 Para verificar se está sendo executado corretamente acesse via navegador http://localhost:3000 onde irá aparecer uma pagina do Rails com a versão do Ruby e a Versão do Rails.
 
-Verificando a Autenticação
+# Verificando a Autenticação:
+
+Para testarmos a aplicação deverá ser utilizado algum programa/plugin para requisições API.
+Os testes foram efetuados com o programa POSTMAN. Abaixo estão os endereços para utilização:
+
+http://localhost/api/vi/auth/sign_in (utlizado para logar). Deve ser passado o usuário e senha para logar na opção body > form-data e inserir
+os atributos email e password. O JSON de retorno que deverá aparecer é:
+
+    {
+        "data": {
+            "id": 1,
+            "email": "teste@teste.com",
+            "provider": "email",
+            "uid": "teste@teste.com",
+            "allow_password_change": false,
+            "first_name": "Marcel",
+            "last_name": "Pereira",
+            "role": "user"
+        }
+    }
