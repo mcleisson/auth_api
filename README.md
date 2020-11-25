@@ -1,8 +1,21 @@
 # README
 
-Versão do Ruby: 2.6.5
-Versão do Rails: 6.0.3.4
-Versão do PostgreSQL: 10.15
+    Versão do Ruby: 2.6.5
+    Versão do Rails: 6.0.3.4
+    Versão do PostgreSQL: 10.15
+
+    GEM's Usadas
+    `devise_token_auth` (gem para autenticação de usuários com token)
+
+    `rack-cors` (gem utilizada para permitir chamadas em AJAX)
+
+    `gem pry-rails` (gem utilizada para testes)
+
+    `rspec-core rspec-rails rspec-expectations rspec-mocks rspec-support` (gems utilizadas para escrever testes da aplicação)
+
+    `factory_bot_rails` (gem utilizada para gerar factories)
+
+    `faker` (gem utilizada para gerar dados aleatórios para os testes TDD)
 
 Como Rodar o este projeto
 
@@ -35,3 +48,5 @@ Listening on tcp://[::1]:3000
 Use Ctrl-C to stop
 
 Para verificar se está sendo executado corretamente acesse via navegador http://localhost:3000 onde irá aparecer uma pagina do Rails com a versão do Ruby e a Versão do Rails.
+
+Verificando a Autenticação
