@@ -4,18 +4,20 @@
     Versão do Rails: 6.0.3.4
     Versão do PostgreSQL: 10.15
 
-    GEM's Usadas
-    `devise_token_auth` (gem para autenticação de usuários com token)
+    GEM's Usadas:
 
-    `rack-cors` (gem utilizada para permitir chamadas em AJAX)
+    devise_token_auth (gem para autenticação de usuários com token)
 
-    `gem pry-rails` (gem utilizada para testes)
+    rack-cors (gem utilizada para permitir chamadas em AJAX)
 
-    `rspec-core rspec-rails rspec-expectations rspec-mocks rspec-support` (gems utilizadas para escrever testes da aplicação)
+    gem pry-rails (gem utilizada para testes)
 
-    `factory_bot_rails` (gem utilizada para gerar factories)
+    rspec-core rspec-rails rspec-expectations rspec-mocks rspec-support` (gems utilizadas para escrever
+     testes da aplicação)
 
-    `faker` (gem utilizada para gerar dados aleatórios para os testes TDD)
+    factory_bot_rails (gem utilizada para gerar factories)
+
+    faker (gem utilizada para gerar dados aleatórios para os testes TDD)
 
 Como Rodar o este projeto
 
