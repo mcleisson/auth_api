@@ -12,11 +12,11 @@ Como Rodar o este projeto
 
 3 - Via linha acesse o proejeto, e execute os seguintes comandos:
 
-bundle install (irá instalar as gems do projeto)
-rails db:create (se estiver com as informações corretas de banco de dados, irá criar as bases de dados);
-rails db:migrate (irá criar as tabelas na base de dados)
-rails db:seed (irá popular a tabela users com 2 usuários)
-rails s (irá executar o servidor). Caso ocorra tudo bem irá aparecer a seguinte mensagem:
+`bundle install` (irá instalar as gems do projeto)
+`rails db:create` (se estiver com as informações corretas de banco de dados, irá criar as bases de dados);
+`rails db:migrate` (irá criar as tabelas na base de dados)
+`rails db:seed` (irá popular a tabela users com 2 usuários)
+`rails s` (irá executar o servidor). Caso ocorra tudo bem irá aparecer a seguinte mensagem:
 
 => Booting Puma
 => Rails 6.0.3.4 application starting in development
