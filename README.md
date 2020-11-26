@@ -37,17 +37,17 @@
 
 `rails s` (irá executar o servidor). Caso ocorra tudo bem irá aparecer a seguinte mensagem:
 
-=> Booting Puma
-=> Rails 6.0.3.4 application starting in development
-=> Run `rails server --help` for more startup options
-Puma starting in single mode...
+=> Booting Puma<br>
+=> Rails 6.0.3.4 application starting in development<br>
+=> Run `rails server --help` for more startup options<br>
+Puma starting in single mode...<br>
 
-Version 4.3.6 (ruby 2.6.5-p114), codename: Mysterious Traveller
-Min threads: 5, max threads: 5
-Environment: development
-Listening on tcp://127.0.0.1:3000
-Listening on tcp://[::1]:3000
-Use Ctrl-C to stop
+Version 4.3.6 (ruby 2.6.5-p114), codename: Mysterious Traveller<br>
+Min threads: 5, max threads: 5<br>
+Environment: development<br>
+Listening on tcp://127.0.0.1:3000<br>
+Listening on tcp://[::1]:3000<br>
+Use Ctrl-C to stop<br>
 
 Para verificar se está sendo executado corretamente acesse via navegador http://localhost:3000 onde irá aparecer uma pagina do Rails com a versão do Ruby e a Versão do Rails.
 
@@ -71,3 +71,11 @@ os atributos email e password. O JSON de retorno que deverá aparecer é:
             "role": "user"
         }
     }
+
+# Executando testes RSpec
+
+Para executar o teste rspec, via linha de comando, acesse o diretório do projeto e execute o comando:
+
+`rspec -f d`
+
+Este comando irá executar todos os testes nos diretórios factories, requests e support que estão localizados na pasta spec dentro da pasta config.
