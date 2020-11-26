@@ -39,7 +39,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.inet     :current_sign_in_ip #IP atual de login
       t.inet     :last_sign_in_ip #ultimo IP logado
       
-
+      
       ## Tokens
       t.json :tokens
 

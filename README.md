@@ -90,6 +90,8 @@ os atributos email e password. O JSON de retorno que deverá aparecer é:
         }
     }
 
+http://localhost:3000/api/v1/users (Lista os usuários cadastrados). Ainda não foi implementado para pedir
+
 # Executando testes RSpec
 
 Para executar o teste rspec, via linha de comando, acesse o diretório do projeto e execute o comando:
