@@ -8,4 +8,4 @@
 
 #Cria registro na tabela Users
 User.create first_name: 'Marcel', last_name: 'Pereira', email: 'teste1@teste.com', password: 123456, role: 'user'
-User.create first_name: 'Maikel', last_name: 'Bald', email: 'maikel@ruptiva.com', password: 'ilikeruptiva', role: 'user'
+User.create first_name: 'Maikel', last_name: 'Bald', email: 'maikel@ruptiva.com', password: 'ilikeruptiva', role: 'admin'
