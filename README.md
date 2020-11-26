@@ -79,3 +79,35 @@ Para executar o teste rspec, via linha de comando, acesse o diretório do projet
 `rspec -f d`
 
 Este comando irá executar todos os testes nos diretórios factories, requests e support que estão localizados na pasta spec dentro da pasta config.
+O Retorno deste comando se tudo ocorrer corretamente é:
+
+<pre>Cadastro
+  Método de registro de e-mail
+    POST /api/v1/auth/
+      parâmetros de inscrição válidos
+<font color="#4E9A06">        retorna status 200</font>
+<font color="#4E9A06">        retorna cabeçalho de autenticação com atributos corretos</font>
+<font color="#4E9A06">        retorna o usuário no cabeçalho de autenticação</font>
+<font color="#4E9A06">        retorna expiração no cabeçalho de autenticação</font>
+<font color="#4E9A06">        retorna uid no cabeçalho de autenticação</font>
+<font color="#4E9A06">        retorna o status de sucesso</font>
+<font color="#4E9A06">        Criação de novo Usuário</font>
+      parâmetros de inscrição inválidos
+<font color="#4E9A06">        retorna entidade não processável 422</font>
+
+Sessão
+  POST /api/v1/auth/sign_in
+    parâmetros de login válidos
+<font color="#4E9A06">      retorna status 200</font>
+<font color="#4E9A06">      retorna token de acesso no cabeçalho de autenticação</font>
+<font color="#4E9A06">      retorna o usuário no cabeçalho de autenticação</font>
+<font color="#4E9A06">      retorna expiração no cabeçalho de autenticação</font>
+<font color="#4E9A06">      retorna uid no cabeçalho de autenticação</font>
+    parâmetros de login inválidos
+<font color="#4E9A06">      retorna o status não autorizado 401</font>
+  DELETE /api/v1/auth/sign_out
+<font color="#4E9A06">    retorna status 200</font>
+
+Finished in 9.95 seconds (files took 11.24 seconds to load)
+<font color="#4E9A06">15 examples, 0 failures</font>
+</pre>
