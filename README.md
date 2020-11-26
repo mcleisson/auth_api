@@ -90,7 +90,22 @@ os atributos email e password. O JSON de retorno que deverá aparecer é:
         }
     }
 
-http://localhost:3000/api/v1/users (Lista os usuários cadastrados). Ainda não foi implementado para pedir
+http://localhost:3000/api/v1/users (Lista os usuários cadastrados). Ainda não foi implementado a autenticação para listar apenas o próprio usuário. O JSON de retorno que deverá aparecer é:
+
+    [
+        {
+            "id": 1,
+            "provider": "email",
+            "uid": "teste2@teste.com",
+            "allow_password_change": false,
+            "first_name": null,
+            "last_name": null,
+            "email": "teste2@teste.com",
+            "role": null,
+            "created_at": "2020-11-26T01:21:11.578Z",
+            "updated_at": "2020-11-26T01:21:11.893Z"
+        }
+    ]
 
 # Executando testes RSpec
 
