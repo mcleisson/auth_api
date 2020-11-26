@@ -72,6 +72,24 @@ os atributos email e password. O JSON de retorno que deverá aparecer é:
         }
     }
 
+http://localhost:3000/api/v1/auth/ (utilizado para registrar novo usuário). Deve ser passado os parâmetros email, password e password_confirmation na opção body > x-www-form-urlencoded. O JSON de retorno que deverá aparecer é
+
+    {
+    "status": "success",
+        "data": {
+            "uid": "teste2@teste.com",
+            "id": 3,
+            "email": "teste2@teste.com",
+            "provider": "email",
+            "allow_password_change": false,
+            "first_name": null,
+            "last_name": null,
+            "role": null,
+            "created_at": "2020-11-26T00:49:23.325Z",
+            "updated_at": "2020-11-26T00:49:23.738Z"
+        }
+    }
+
 # Executando testes RSpec
 
 Para executar o teste rspec, via linha de comando, acesse o diretório do projeto e execute o comando:
