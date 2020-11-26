@@ -56,23 +56,7 @@ Para verificar se está sendo executado corretamente acesse via navegador http:/
 Para testarmos a aplicação deverá ser utilizado algum programa/plugin para requisições API.
 Os testes foram efetuados com o programa POSTMAN. Abaixo estão os endereços para utilização:
 
-http://localhost/api/vi/auth/sign_in (utlizado para logar). Deve ser passado o usuário e senha para logar na opção body > form-data e inserir
-os atributos email e password. O JSON de retorno que deverá aparecer é:
-
-    {
-        "data": {
-            "id": 1,
-            "email": "teste@teste.com",
-            "provider": "email",
-            "uid": "teste@teste.com",
-            "allow_password_change": false,
-            "first_name": "Marcel",
-            "last_name": "Pereira",
-            "role": "user"
-        }
-    }
-
-http://localhost:3000/api/v1/auth/ (utilizado para registrar novo usuário). Deve ser passado os parâmetros email, password e password_confirmation na opção body > x-www-form-urlencoded. O JSON de retorno que deverá aparecer é
+http://localhost:3000/api/v1/auth/ (utilizado para registrar novo usuário). Deve ser passado os parâmetros email, password e password_confirmation na opção body > x-www-form-urlencoded. O JSON de retorno que deverá aparecer é:
 
     {
     "status": "success",
@@ -87,6 +71,22 @@ http://localhost:3000/api/v1/auth/ (utilizado para registrar novo usuário). Dev
             "role": null,
             "created_at": "2020-11-26T00:49:23.325Z",
             "updated_at": "2020-11-26T00:49:23.738Z"
+        }
+    }
+
+http://localhost/api/vi/auth/sign_in (utlizado para logar). Deve ser passado o usuário e senha para logar na opção body > form-data e inserir
+os atributos email e password. O JSON de retorno que deverá aparecer é:
+
+    {
+        "data": {
+            "id": 1,
+            "email": "teste@teste.com",
+            "provider": "email",
+            "uid": "teste@teste.com",
+            "allow_password_change": false,
+            "first_name": "Marcel",
+            "last_name": "Pereira",
+            "role": "user"
         }
     }
 
